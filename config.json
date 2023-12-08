@@ -1,0 +1,17 @@
+{
+  "rateLimiting": {
+    "maxRequestsPerMinute": 5,
+    "tokenRefillInterval": 600
+  },
+  "targetServers": {
+    "http://localhost:8111": {
+      "routePath": "/a/*",
+      "healthPath": "/health"
+    },
+    "http://localhost:8222": {
+      "routePath": "/b/*",
+      "healthPath": "/health"
+    }
+  },
+  "healthCheckFrequency": 5000
+}
